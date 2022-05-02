@@ -92,6 +92,69 @@ img {
 }
 
 
+/* Menu */
+
+.toggle-menu {
+    position: absolute;
+    top: .5rem;
+    right: 1rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 40px;
+    z-index: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .toggle-menu {
+        background-color: none;
+        display: none;
+    }
+}
+
+.main-menu {
+    position: absolute;
+    list-style: none;
+    margin: 0;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: none;
+    transition: 0.3s;
+    transform: translateY(-130%);
+    background-color: none;
+    z-index: 100;
+}
+
+.main-menu--show {
+    transform: translateY(0);
+}
+
+@media screen and (min-width: 768px) {
+    .main-menu {
+        background-color: none;
+        flex-direction: row;
+        transform: translateY(0);
+    }
+    .main-menu__item {
+        margin-left: 200px;
+    }
+}
+
+.main-menu__item {
+    padding: 1em;
+}
+
+.main-menu__link {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+}
+
+
 /* Hero container */
 
 .hero__container {
