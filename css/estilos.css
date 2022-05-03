@@ -80,6 +80,7 @@ img {
     margin-left: auto;
     cursor: pointer;
     display: none;
+    padding-bottom: 80px;
 }
 
 .nav__img {
